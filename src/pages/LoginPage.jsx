@@ -35,9 +35,7 @@ export default function LoginPage() {
       <Card className="w-full max-w-md p-8 shadow-xl border-0">
         {/* Logo Section */}
         <div className="flex flex-col items-center mb-8">
-          <div className="w-16 h-16 rounded-xl bg-primary flex items-center justify-center mb-4">
-            <Building2 className="h-8 w-8 text-white" />
-          </div>
+                  <img src="/adminlogo.png" alt="Logo" className="h-14 w-auto object-contain" />
           <h1 className="text-2xl font-bold text-navy-900">Admin Login</h1>
           <p className="text-sm text-muted-foreground mt-1">Sign in to your admin account</p>
         </div>
@@ -75,12 +73,7 @@ export default function LoginPage() {
         </form>
 
         {/* Credentials Hint */}
-        <div className="mt-6 pt-6 border-t border-border text-center">
-          <p className="text-xs text-muted-foreground">
-            Default: <span className="font-medium">admin@gmail.com</span> / 
-            <span className="font-medium"> admin@987</span>
-          </p>
-        </div>
+        
       </Card>
     </div>
   );
