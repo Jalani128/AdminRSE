@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', sans-serif;
+    /* baaki variables... */
+  }
+}
+
+
+:root {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Playfair Display', serif;
+
+  --background: 242 242% 97%;
+  --foreground: 220 30% 10%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 30% 10%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 30% 10%;
+  --primary: 228 63% 28%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 210 18% 94%;
+  --secondary-foreground: 220 30% 10%;
+  --muted: 210 18% 94%;
+  --muted-foreground: 215 16% 47%;
+  --accent: 228 63% 28%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 214 20% 88%;
+  --input: 214 20% 88%;
+  --ring: 228 63% 28%;
+  --radius: 0.5rem;
+
+  --sidebar-bg: 222 35% 15%;
+  --sidebar-fg: 215 25% 80%;
+  --sidebar-active-bg: 228 63% 28%;
+  --sidebar-active-fg: 0 0% 100%;
+  --sidebar-hover-bg: 228 63% 35%;
+  --sidebar-border: 228 63% 25%;
+  --sidebar-logo-fg: 0 0% 100%;
+
+  --gold: 38 92% 50%;
+  --navy: 220 35% 10%;
+}
+
+@layer base {
+  * { @apply border-border outline-ring/50; }
+  body { @apply bg-background text-foreground; font-family: var(--font-sans); }
+}
+
+.font-display { font-family: var(--font-display); }
+
+/* Quill overrides */
+.ql-toolbar { border-radius: 0.5rem 0.5rem 0 0 !important; border-color: hsl(var(--border)) !important; background: hsl(var(--secondary)); }
+.ql-container { border-radius: 0 0 0.5rem 0.5rem !important; border-color: hsl(var(--border)) !important; min-height: 200px; font-family: var(--font-sans) !important; font-size: 14px !important; }
+.ql-editor { min-height: 200px; }

@@ -1,0 +1,7 @@
+// UI components configuration (if using shadcn/ui)
+{
+  "style": "default",
+  "rsc": false,
+  "tsx": true,
+  "aliasPrefix": "@"
+}
