@@ -1,7 +1,7 @@
 import client from './api';
 
 export const authService = {
-  login: (email, password) => client.post('/auth/login', { email, password }),
+  login: (email, password) => client.post('/users/login', { email, password }),
 };
 
 export const teamService = {
