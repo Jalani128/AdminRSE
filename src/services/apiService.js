@@ -28,19 +28,3 @@ export const inquiriesAPI = {
   updateNotes: (id, notes) => client.put(`/admin/inquiries/${id}/notes`, { notes }),
   delete: (id) => client.delete(`/admin/inquiries/${id}`),
 };
-
-export const teamService = {
-  getAll: () => client.get('/team'),
-  create: (data) => client.post('/team', data),
-  update: (id, data) => client.put(`/team/${id}`, data),
-  delete: (id) => client.delete(`/team/${id}`),
-};
-
-export const blogService = {
-  getAll: (params) => client.get('/blogs', { params }),
-  create: (data) => client.post('/blogs', data),
-  update: (id, data) => client.put(`/blogs/${id}`, data),
-  delete: (id) => client.delete(`/blogs/${id}`),
-  getPublished: () => client.get('/blogs/published'),
-  getBySlug: (slug) => client.get(`/blogs/slug/${slug}`),
-};
