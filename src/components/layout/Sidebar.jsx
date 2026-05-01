@@ -1,11 +1,12 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { LayoutDashboard, Users, BookOpen, LogOut } from "lucide-react";
+import { LayoutDashboard, Users, BookOpen, LogOut, FileText } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navItems = [
   { label: "Dashboard", path: "/admin/dashboard", icon: LayoutDashboard },
   { label: "Team", path: "/admin/team", icon: Users },
   { label: "Blogs", path: "/admin/blogs", icon: BookOpen },
+  { label: "Inquiries", path: "/admin/inquiries", icon: FileText },
 ];
 
 export default function Sidebar({ mobileOpen, setMobileOpen }) {

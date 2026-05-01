@@ -53,7 +53,7 @@ export default function AdminDashboard() {
             </div>
           </div>
         </div>
-        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+        {/* <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
               <TrendingUp className="w-6 h-6 text-primary" />
@@ -63,7 +63,7 @@ export default function AdminDashboard() {
               <p className="text-2xl font-bold text-navy-900">89</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Quick Actions */}

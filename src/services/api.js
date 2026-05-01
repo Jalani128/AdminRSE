@@ -28,8 +28,29 @@ export const propertiesAPI = {
 };
 
 export const inquiriesAPI = {
-  create: (data) => client.post('/inquiries', data),
-  getAll: () => client.get('/inquiries'),
+  create: (data) => client.post('/admin/inquiries', data),
+  getAll: (params) => client.get('/admin/inquiries', { params }),
+  getById: (id) => client.get(`/admin/inquiries/${id}`),
+  updateStatus: (id, data) => client.put(`/admin/inquiries/${id}/status`, data),
+  delete: (id) => client.delete(`/admin/inquiries/${id}`),
+};
+
+export const blogsAPI = {
+  getAll: (params) => client.get('/blogs', { params }),
+  getById: (id) => client.get(`/blogs/${id}`),
+  create: (data) => client.post('/blogs', data),
+  update: (id, data) => client.put(`/blogs/${id}`, data),
+  delete: (id) => client.delete(`/blogs/${id}`),
+  getPublished: () => client.get('/blogs/published'),
+  getBySlug: (slug) => client.get(`/blogs/slug/${slug}`),
+};
+
+export const teamAPI = {
+  getAll: () => client.get('/team'),
+  getById: (id) => client.get(`/team/${id}`),
+  create: (data) => client.post('/team', data),
+  update: (id, data) => client.put(`/team/${id}`, data),
+  delete: (id) => client.delete(`/team/${id}`),
 };
 
 export default client;
